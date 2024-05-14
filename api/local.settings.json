@@ -1,1 +1,8 @@
-
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "CONNECTION_STRING": "jdbc:sqlserver://testingserver12.database.windows.net:1433;database=TestDatabase;user=myadminuser@testingserver12;password={your_password_here};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;"
+  }
+}
