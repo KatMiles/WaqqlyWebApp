@@ -2,7 +2,7 @@
   "$schema": "https://github.com/Azure/data-api-builder/releases/download/v0.9.7/dab.draft.schema.json",
   "data-source": {
     "database-type": "mssql",
-    "connection-string": "jdbc:sqlserver://testingserver12.database.windows.net:1433;database=TestDatabase;user=myadminuser@testingserver12;password={your_password_here};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;",
+    "connection-string": "mongodb://testingdatabase1:3EZRFE61p7Vxjgcofl7ZB6LciZk2dPcbteN3D9Se8WEkZwExr60ctq8KA69vUnmA5xFR4tP2VBX2ACDbuPB1oA==@testingdatabase1.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&maxIdleTimeMS=120000&appName=@testingdatabase1@",
     "options": {
       "set-session-context": false
     }
