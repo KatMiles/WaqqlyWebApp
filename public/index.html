@@ -10,7 +10,7 @@
 <h1 id="hello"></h1>
 
 <script>
-fetch('api/HttpTrigger1')
+fetch('/api/HttpTrigger1')
   .then(response => response.text())
   .then(data => {
     document.getElementById('hello').innerText = data;
