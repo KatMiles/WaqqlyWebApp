@@ -40,6 +40,19 @@ th, td {
 th {
     background-color: #f2f2f2;
 }
+.container { 
+  height: 200px;
+  position: relative; 
+}
+
+.centerbut {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
 </style>
 
@@ -75,7 +88,7 @@ th {
   
 <body>
 <div>
-<button class="center"; onclick="redirectToPage()";class="hover-button";style="background-color: #0076aa; color: white; padding: 10px 20px; border: none; cursor: pointer;">Select</button>
+<button class="container"; class="centerbut"; onclick="redirectToPage()";class="hover-button";style="background-color: #0076aa; color: white; padding: 10px 20px; border: none; cursor: pointer;">Select</button>
 
 <script>
         function redirectToPage() {
