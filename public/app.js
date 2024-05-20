@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', async function() {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const dogs = await response.json();
+        const results = await response.json();
 
         const tableBody = document.querySelector('#dogwalkerTable tbody');
-        dogs.forEach(dog => {
+        results.forEach(dog => {
             const row = document.createElement('tr');
 
             const nameCell = document.createElement('td');
