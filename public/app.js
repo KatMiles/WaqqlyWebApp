@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', async function() {
-    const endpoint = 'https://functionforwaqqlytesting.azurewebsites.net/api/httptriggertesting'; // Replace with your function endpoint
+    const endpoint = 'https://functionforwaqqlytesting.azurewebsites.net/api/httptriggertesting';
 
     try {
         const response = await fetch(endpoint);
@@ -30,3 +30,4 @@ document.addEventListener('DOMContentLoaded', async function() {
         console.error('Error fetching data:', error);
     }
 });
+
