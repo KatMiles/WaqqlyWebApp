@@ -8,21 +8,25 @@ document.addEventListener('DOMContentLoaded', async function() {
         }
         const dogs = await response.json();
 
-        const tableBody = document.querySelector('#dogsTable tbody');
+        const tableBody = document.querySelector('#dogwalkerTable tbody');
         dogs.forEach(dog => {
             const row = document.createElement('tr');
 
-            const dogNameCell = document.createElement('td');
-            dogNameCell.textContent = dog.dogname;
-            row.appendChild(dogNameCell);
+            const nameCell = document.createElement('td');
+            nameCell.textContent = dog.dogname;
+            row.appendChild(nameCell);
 
-            const ownerNameCell = document.createElement('td');
-            ownerNameCell.textContent = dog.ownername;
-            row.appendChild(ownerNameCell);
+            const locationCell = document.createElement('td');
+            locationCell.textContent = dog.ownername;
+            row.appendChild(locationCell);
 
-            const dogWalkerCell = document.createElement('td');
-            dogWalkerCell.textContent = dog.dogwalker;
-            row.appendChild(dogWalkerCell);
+            const priceCell = document.createElement('td');
+            priceCell.textContent = dog.dogwalker;
+            row.appendChild(priceCell);
+
+            const numberCell = document.createElement('td');
+           numberCell.textContent = dog.number;
+            row.appendChild(numberCell);
 
             tableBody.appendChild(row);
         });
